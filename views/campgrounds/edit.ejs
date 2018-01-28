@@ -1,0 +1,19 @@
+<% include ../partials/header %>
+
+<div class="row col s12 m7">
+    <div class="container">
+        <h4>Edit <%= campground.name %></h4>
+        <form action="/campgrounds/<%= campground._id %>/?_method=put" method="post">
+            <input type="text" name="campground[name]" value="<%= campground.name %>">
+            <input type="number" name="campground[price]" value="<%= campground.price %>">
+            <input type="text" name="campground[image]" value="<%= campground.image %>">
+            <input type="text" name="campground[description]" value="<%= campground.description %>">
+            <button class="btn waves-effect waves-light" type="submit">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+    </div>
+</div>
+
+
+<% include ../partials/footer %>

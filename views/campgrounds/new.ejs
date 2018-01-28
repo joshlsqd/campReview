@@ -1,0 +1,16 @@
+<% include ../partials/header %>
+<div class="row col s12 m7">
+    <div class="container">
+        <h4>Create a new campground</h4>
+        <form action="/campgrounds" method="post">
+            <input type="text" name="name" placeholder="name">
+            <input type="number" name="price" placeholder="price" min="0.5" step="0.5">
+            <input type="text" name="image" placeholder="image url">
+            <input type="text" name="description" placeholder="description">
+            <button class="btn waves-effect waves-light" type="submit">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+    </div>
+</div>
+<% include ../partials/footer %>

@@ -1,0 +1,38 @@
+.container {
+    width: 95%;
+}
+
+.deleteForm {
+    display: inline;
+}
+
+#commentSection {
+    margin-top: 22px;
+}
+
+.dark-primary-color    { background: #303F9F; }
+.default-primary-color { background: #3F51B5;}
+.light-primary-color   { background: #C5CAE9; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #FF5722; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+
+.collection .collection-item.avatar i.circle {
+    font-size: 18px;
+    line-height: 42px;
+    color: rgb(255, 255, 255);
+    background-color: #3F51B5;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
